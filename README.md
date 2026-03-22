@@ -1,44 +1,44 @@
 # CarDuty
 
-Мобилно приложение за проследяване на разходите по автомобила — застраховки, данъци, технически прегледи, винетки и други.
+A mobile app for tracking car expenses — insurance, taxes, inspections, vignettes, and more.
 
-## Функционалности
+## Features
 
-- **Табло (Dashboard)** — преглед на всички автомобили с цветово кодирани известия за изтичащи документи
-- **Управление на автомобили** — добавяне, редактиране и изтриване на коли
-- **Категории разходи** — каско, гражданска отговорност, данък, годишен преглед, винетка
-- **Известия** — автоматични предупреждения за изтичащи срокове (зелено / жълто / червено)
-- **История** — филтриране и преглед на всички минали разходи
-- **Локално съхранение** — данните се пазят на устройството чрез AsyncStorage
+- **Dashboard** — overview of all vehicles with color-coded alerts for expiring documents
+- **Car Management** — add, edit, and delete vehicles
+- **Expense Categories** — comprehensive insurance (каско), liability insurance (гражданска), road tax, annual inspection, vignette
+- **Alerts** — automatic warnings for upcoming expirations (green / yellow / red)
+- **History** — filter and browse all past expenses
+- **Local Storage** — data is persisted on-device via AsyncStorage
 
-## Технологии
+## Tech Stack
 
 - React Native + Expo SDK 55
 - React Navigation (stack + bottom tabs)
-- AsyncStorage за persistence
-- UUID за уникални идентификатори
+- AsyncStorage for persistence
+- UUID for unique identifiers
 
-## Стартиране
+## Getting Started
 
 ```bash
 npm install
 npx expo start
 ```
 
-След това сканирайте QR кода с Expo Go (Android/iOS) или натиснете `w` за уеб версия.
+Then scan the QR code with Expo Go (Android/iOS) or press `w` to open the web version.
 
-## Структура на проекта
+## Project Structure
 
 ```
 src/
-├── components/    # Преизползваеми компоненти
-├── context/       # React Context за state management
-├── screens/       # Екрани на приложението
+├── components/    # Reusable UI components
+├── context/       # React Context for state management
+├── screens/       # App screens
 │   ├── DashboardScreen.js
 │   ├── AddCarScreen.js
 │   ├── CarDetailsScreen.js
 │   ├── ExpenseListScreen.js
 │   ├── AddExpenseScreen.js
 │   └── HistoryScreen.js
-└── utils/         # Помощни функции и константи
+└── utils/         # Helper functions and constants
 ```
