@@ -13,7 +13,6 @@ import {
   EXPENSE_CATEGORIES,
   daysUntil,
   formatDate,
-  getCategoryColor,
 } from '../utils/constants';
 
 export default function CarDetailsScreen({ navigation, route }) {

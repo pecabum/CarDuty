@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useData } from '../context/DataContext';
-import { EXPENSE_CATEGORIES, daysUntil, formatDate, getCategoryColor } from '../utils/constants';
+import { EXPENSE_CATEGORIES, daysUntil, formatDate } from '../utils/constants';
 
 export default function DashboardScreen({ navigation }) {
   const { cars, expenses, loading, reload } = useData();

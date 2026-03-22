@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useData } from '../context/DataContext';
-import { getCategoryColor, CATEGORY_MAP, formatDate, daysUntil } from '../utils/constants';
+import { CATEGORY_MAP, formatDate, daysUntil } from '../utils/constants';
 
 export default function ExpenseListScreen({ navigation, route }) {
   const { carId, category, carName } = route.params;
